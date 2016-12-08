@@ -1242,7 +1242,7 @@ INTERNAL_SYSTEMIMAGE_FILES := $(filter $(TARGET_OUT)/%, \
 
 systemimage-changelog: $(INTERNAL_SYSTEMIMAGE_FILES)
 	@echo -e "Making changelog!"
-	$(hide) APKCERTS=$(APKCERTS_FILE) ./vendor/aicp/tools/changelog
+	$(hide) APKCERTS=$(APKCERTS_FILE) ./vendor/cm/tools/changelog
 
 .PHONY: systemimage-changelog
 
